@@ -13,6 +13,9 @@ cv.waitKey(0)
 print("image_shape: ", cv_image.shape) # h, w, c
 print(type(cv_image))                  # numpy.ndarray
 
+#image = cv.cvtColor(cv_image, cv.COLOR_BGR2GRAY ) #转灰度
+#image = cv.cvtColor(cv_image, cv.COLOR_BGR2RGB )
+
 width = int(cv_image.shape[0] / 2)
 height = int(cv_image.shape[1] / 2)
 image = cv.resize(cv_image, (height, width), interpolation=cv.INTER_CUBIC)
