@@ -16,7 +16,7 @@ def image_fill(image):
     im_out = image + image_floodfill_inv
     cv2.imshow('foreground', im_out)
 
-image = cv2.imread('./physical_world/color_depth.png')    #原图
+image = cv2.imread('./test_images/color_depth.png')    #原图
 cv2.imshow('image', image)
 image_fill(image)
 c = cv2.waitKey(0)
