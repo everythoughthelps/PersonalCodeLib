@@ -5,6 +5,12 @@ path = './test_images/gray_depth.png'
 
 image = cv.imread(path)       # 读取图片,格式为BGR, three modes, cv2.IMREAD_COLOR for ignoring the alpha
                                 # cv2.IMREAD_GRAYSCALE for gray mode, cv2.IMREAD_UNCHANGED for loading alpha
+
+'''
+对 8 位无符号图像，按原样显示；
+对 16 位无符号或 32 位整数图像，将像素值范围 [0,255 * 256] 映射到 [0,255] 显示；
+对 32 位浮点图像，将像素值范围 [0,1] 映射到 [0,255] 显示；
+'''
 cv.imshow('color_depth', image)
 cv.waitKey(0)
 
