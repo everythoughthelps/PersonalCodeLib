@@ -17,3 +17,6 @@ ffmpeg -i yourvideo.mp4 -vf crop=w:h:start_x:start_y out.mp4
 
 #turn a batch of images to a video, use -pix_fmt yuv420p on windows platform
 ffmpeg -i frame_000%3d.png -pix_fmt yuv420p out.mp4
+
+#ffmpeg -r framerate -i input.mp4 -f image2 output001.jpg~output447.jpg
+ffmpeg -r 30 -i kitten.mp4 -f image2 image%03d.jpg
