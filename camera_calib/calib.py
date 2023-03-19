@@ -29,7 +29,7 @@ objp = objp*25  # 18.1 mm
 objpoints = [] # 在世界坐标系中的三维点
 imgpoints = [] # 在图像平面的二维点
 
-images = glob.glob('./calib_jpg/*.jpg')  #   拍摄的十几张棋盘图片所在目录
+images = glob.glob('./iphone12mini_front_camera/*.jpg')  #   拍摄的十几张棋盘图片所在目录
 
 i = 1
 for fname in images:
