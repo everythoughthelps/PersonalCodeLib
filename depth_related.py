@@ -12,7 +12,7 @@ class DepthMap():
         return colored_depth
 
 
-    def normalize_depth(self, depth)
+    def normalize_depth(self, depth):
         vmax = np.percentile(depth, 95)
         normalizer = mpl.colors.Normalize(vmin=depth.min(), vmax=vmax)
         normalized_depth = normalizer(depth)
